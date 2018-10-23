@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1766535049706230}
+  m_IsPrefabParent: 1
+--- !u!1 &1315068058170650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4416216088193366}
+  - component: {fileID: 54432432603826078}
+  - component: {fileID: 65415225720559928}
+  m_Layer: 0
+  m_Name: Click Trigger
+  m_TagString: ClickTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1766535049706230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4709264808698672}
+  - component: {fileID: 114867427851038378}
+  m_Layer: 0
+  m_Name: Machine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4416216088193366
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315068058170650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4709264808698672}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4709264808698672
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1766535049706230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4416216088193366}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54432432603826078
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315068058170650}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65415225720559928
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315068058170650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.85, y: 0.08, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114867427851038378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1766535049706230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf6cd23cb217ce4b9ad646e8a75f96f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numSlots: 5
+  minSlotSpeed: 8
+  maxSlotSpeed: 16
+  slotSlowdownStartTime: 1
+  slotSlowdownStartNext: 0.5
+  slotSlowdownInterval: 0.1
+  slotSlowdownDelta: 1
+  slotSlowestSpinSpeed: 1
+  slotPrefab: {fileID: 1770162577885604, guid: 5b21d26cad5568242bf3e0802ed136bb, type: 2}
+  faces:
+  - faceType: 1
+    facePrefab: {fileID: 1302255364608456, guid: 19919ef570bb8934490f469623b29393,
+      type: 2}
+  - faceType: 2
+    facePrefab: {fileID: 1201026204981370, guid: 8c12095171659dd4bb6895b9b26b38be,
+      type: 2}
+  - faceType: 0
+    facePrefab: {fileID: 1740477060614968, guid: f70e618e19ed528458050b2452ed761c,
+      type: 2}
+  - faceType: 3
+    facePrefab: {fileID: 1431256569071784, guid: f54a5bbd761a08546899ee77f8e9f467,
+      type: 2}
+  - faceType: 4
+    facePrefab: {fileID: 1649591740122804, guid: 71b05cfdbbbb9204c82131aa11cf0279,
+      type: 2}
+  - faceType: 5
+    facePrefab: {fileID: 1634910153192678, guid: ed3368ab04a0e724f98195050868e36c,
+      type: 2}
